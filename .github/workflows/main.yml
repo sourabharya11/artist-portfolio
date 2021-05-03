@@ -23,7 +23,6 @@ jobs:
         upstream_repository: ywalia01/artist-portfolio
         upstream_branch: main
         target_branch: main
-        github_token: ${{ secrets.MySecret }}
 
     - name: Check for new commits
       if: steps.sync.outputs.has_new_commits
